@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karen Yapranata | UI/UX Portfolio</title>
+  <meta name="description" content="UI/UX Portfolio of Karen Yapranata" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">Karen Yapranata</div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="#about" onclick="closeMenu()">About</a>
+      <a href="#skills" onclick="closeMenu()">Skills</a>
+      <a href="#projects" onclick="closeMenu()">Projects</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <img src="assets/profile.jpeg" alt="Karen Yapranata" class="profile-img" />
+      <h1>Hi, I’m Karen Yapranata 👋</h1>
+      <p>Informatics Student & UI/UX Enthusiast</p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-card">
+      <p>
+        I am an Informatics student at Universitas Multimedia Nusantara with a strong
+        foundation in programming and a passion for technology-driven problem-solving.
+        As a fast learner and effective communicator in English and Bahasa Indonesia,
+        I excel at adapting to new technical challenges and collaborating within
+        dynamic, fast-paced teams.
+        <br /><br />
+        I leverage a unique background in leadership and event operations, including
+        roles as a student council leader and security coordinator, to bring discipline
+        and reliability to every project. I am now seeking to apply my technical
+        aptitude and proven organizational skills to contribute meaningfully in a
+        professional IT environment.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section soft-bg">
+    <h2>Skills</h2>
+
+    <div class="skills-notice">
+      <span>💡</span>
+      <p>Click on each skill to see more details</p>
+    </div>
+
+    <div class="skills-wrapper">
+      <div class="skills-group">
+        <h3>Hard Skills</h3>
+        <div class="skills">
+          <span onclick="openModal('Programming Languages','C, HTML, CSS, and Kotlin used in academic projects, CRUD systems, and Android development.')">
+            Programming
+          </span>
+          <span onclick="openModal('UI/UX Design','Designing interfaces with Figma using Gestalt Principles and the 8 Golden Rules.')">
+            UI/UX Design
+          </span>
+          <span onclick="openModal('Git & GitHub','Version control for collaboration and code management.')">
+            Git & GitHub
+          </span>
+          <span onclick="openModal('Android Development','Basic Android development using Gradle, XML, and Manifest.')">
+            Android
+          </span>
+          <span onclick="openModal('Documentation','Technical writing for reports and project documentation.')">
+            Documentation
+          </span>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <h3>Soft Skills</h3>
+        <div class="skills">
+          <span onclick="openModal('Problem Solving','Analyzing requirements and resolving technical challenges.')">
+            Problem Solving
+          </span>
+          <span onclick="openModal('Teamwork','Collaborating effectively in team-based projects and organizations.')">
+            Teamwork
+          </span>
+          <span onclick="openModal('Adaptability','Quickly learning new tools and technologies.')">
+            Adaptability
+          </span>
+          <span onclick="openModal('Communication','Effective communication in English and Bahasa Indonesia.')">
+            Communication
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Selected Projects</h2>
+
+    <div class="project-notice">
+      <span>💡</span>
+      <p>Click on each project to see more details</p>
+    </div>
+
+    <div class="project-grid">
+      <div
+        class="project-card"
+        onclick="openModal(
+          'Nusantara Quest',
+          'An educational Unity-based adventure game inspired by Indonesian culture, featuring quizzes, mini-games, and structured NPC interactions.',
+          'https://github.com/kareny1234/Nusantara_Quest'
+        )"
+      >
+        <h3>Nusantara Quest</h3>
+        <p>Unity • C# • Game Design</p>
+        <a
+          href="https://github.com/kareny1234/Nusantara_Quest"
+          target="_blank"
+          class="project-link"
+        >
+          View on GitHub →
+        </a>
+      </div>
+
+      <div
+        class="project-card"
+        onclick="openModal(
+          'GluCare',
+          'Android application for diabetes awareness and wound analysis with Google authentication and clean UI.',
+          'https://github.com/stevjoo/GluCare'
+        )"
+      >
+        <h3>GluCare</h3>
+        <p>Android • Kotlin • UI Design</p>
+        <a
+          href="https://github.com/stevjoo/GluCare"
+          target="_blank"
+          class="project-link"
+        >
+          View on GitHub →
+        </a>
+      </div>
+
+      <div
+        class="project-card"
+        onclick="openModal(
+          'Artinova',
+          'UI/UX design for a sustainable creative marketplace focusing on complete e-commerce flow.',
+          'https://www.figma.com/design/33nB1f6ZMwFlgKaZtKeuGD/Artinova'
+        )"
+      >
+        <h3>Artinova</h3>
+        <p>UI/UX • Figma • E-Commerce</p>
+        <a
+          href="https://www.figma.com/design/33nB1f6ZMwFlgKaZtKeuGD/Artinova"
+          target="_blank"
+          class="project-link"
+        >
+          View on Figma →
+        </a>
+      </div>
+
+      <div
+        class="project-card"
+        onclick="openModal(
+          'Unity Hub (Concept)',
+          'Mobile app UI concept for UMN students to centralize academic services.',
+          'https://www.figma.com'
+        )"
+      >
+        <h3>Unity Hub</h3>
+        <p>UI/UX • Mobile Concept</p>
+        <a
+          href="https://www.figma.com"
+          target="_blank"
+          class="project-link"
+        >
+          View on Figma →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section soft-bg">
+    <h2>Contact</h2>
+    <p>
+      Email:
+      <a href="mailto:karenyapranataa@gmail.com">
+        karenyapranataa@gmail.com
+      </a>
+    </p>
+    <p>
+      WhatsApp:
+      <a href="https://wa.me/6285157995880" target="_blank">
+        +62 851-5799-5880
+      </a>
+    </p>
+    <p>
+      GitHub:
+      <a href="https://github.com/kareny1234" target="_blank">
+        kareny1234
+      </a>
+    </p>
+    <p>Tangerang, Banten</p>
+  </section>
+
+  <footer>
+    © 2025 Karen Yapranata
+  </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h3 id="modal-title"></h3>
+      <p id="modal-text"></p>
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
