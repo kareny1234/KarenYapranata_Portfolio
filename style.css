@@ -212,13 +212,39 @@ body {
 }
 
 .modal-content button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #ec4899;
-  border: none;
-  color: white;
-  border-radius: 8px;
+  margin-top: 18px;
+  padding: 10px 22px;
+
+  background: transparent;
+  color: #be185d;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  border: 2px solid #f9a8d4;
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
 }
+
+.modal-content button:hover {
+  background: linear-gradient(135deg, #ec4899, #f472b6);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(236,72,153,0.35);
+}
+
+.modal-content button:active {
+  transform: scale(0.94);
+  box-shadow: 0 4px 12px rgba(236,72,153,0.25);
+}
+
 
 footer {
   text-align: center;
@@ -325,4 +351,43 @@ footer {
 .contact-card:hover h3,
 .contact-card:hover p {
   color: white;
+}
+
+.modal-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 16px 0 10px 0;
+  padding: 10px 22px;
+
+  background: transparent;
+  color: #be185d;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  border: 2px solid #f9a8d4;
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
+}
+
+.modal-link:hover {
+  background: linear-gradient(135deg, #ec4899, #f472b6);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(236,72,153,0.35);
+}
+
+.modal-link:active {
+  transform: scale(0.94);
+  box-shadow: 0 4px 12px rgba(236,72,153,0.25);
 }
