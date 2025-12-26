@@ -250,3 +250,79 @@ footer {
     height: 180px;
   }
 }
+
+.contact-desc {
+  max-width: 520px;
+  margin-bottom: 30px;
+  color: #6b7280;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.contact-card {
+  background: white;
+  padding: 28px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #3f3f46;
+  box-shadow: 0 20px 40px rgba(236,72,153,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card span {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.contact-card h3 {
+  color: #be185d;
+  margin-bottom: 6px;
+}
+
+.contact-card p {
+  font-size: 0.9rem;
+  color: #52525b;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(236,72,153,0.25);
+}
+
+.contact-card.location {
+  cursor: default;
+}
+
+.contact-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 14px;
+  fill: none;
+  stroke: #ec4899;
+  stroke-width: 1.8;
+}
+
+.contact-card svg {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.contact-card:hover .contact-icon {
+  stroke: #ffffff;
+}
+
+.contact-card:hover {
+  background: linear-gradient(135deg, #ec4899, #f472b6);
+  color: white;
+}
+
+.contact-card:hover h3,
+.contact-card:hover p {
+  color: white;
+}
